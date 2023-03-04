@@ -1,0 +1,121 @@
+.form-content{
+    height: 100vh;
+    background-image: url("../images/bg/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: overlay;
+    display: grid;
+    place-items: center;
+}
+
+.form-content form {
+max-width: 250px;
+width: 100vw;
+background-color: white;
+padding:  10px;
+border-radius: 8px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+.form-content form h1 {
+ text-align: center;
+ color: #5a55fa;
+}
+
+.form-content form .alert {
+background-color: #fc0008;
+padding: 2px 0;
+text-align: center;
+color: white;
+border-radius: 110px;
+font-size: 10px;
+display: none;
+}
+
+.form-content form .alert.error {
+    display: block;
+}
+
+.form-content form .upload-image {
+  display: block;
+  margin: 0 auto;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-image: url(../images/bg/avatar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.form-content form .upload-image::before {
+    content: '😁';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
+
+}
+
+.form-content form .upload-image:hover::before {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.form-content form input {
+padding: 4px 4px;
+border: 1px solid #ccc;
+border-radius: 10px;
+}
+
+.form-content form input:focus {
+    border: 1px solid rgb(117, 113, 113);
+}
+
+.form-content form button {
+ background-color: #4e4adb;
+ color: white;
+ padding: 5px;
+ border: none;
+ width: 40%;
+ margin: 0 auto;
+ cursor: pointer;
+ border-radius: 6px;
+ transition: background-color 250ms ease-in-out;
+}
+
+.form-content form button:hover {
+ background-color: #2a2773;
+
+}
+
+.form-content form span {
+display: block;
+text-align: center;
+font-size: 8px;
+text-decoration: underline;
+}
+
+.form-content form span >a {
+    color: #5852f2;
+    font-size:10px ;
+}

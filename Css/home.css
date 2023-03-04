@@ -1,0 +1,101 @@
+/* navbar  */
+header {
+ background-color: #5a55fa ;
+ color: white;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 3px 15px;
+ 
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header .user-info {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+}
+header .user-info p {
+    cursor: pointer;
+    font-size: 10px;
+}
+header .user-info .user-image {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+
+}
+header .user-info .user-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50%;
+    border-radius: 50%;
+}
+
+
+/* Banner  */
+
+.banner {
+    height: 600px;
+    background-image: url("../images/bg/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: overlay;
+    display: grid;
+    place-items: center;
+
+}
+.banner h2 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    align-items: center;
+
+}
+
+/* posts */
+
+.posts{
+    max-width: 1200px;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding: 60px 0;
+    row-gap: 15px;
+    column-gap: 10px;    
+}
+.post{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.post .post-image{ 
+    height: 250px;
+    overflow: hidden;
+}
+.post .post-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;   
+}
+.post .post-content {
+    padding: 10px;
+}
+.post .post-content h3 {
+    font-size: 1,3rem ;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.post .post-content p {
+    font-size: 13px;
+}
