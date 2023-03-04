@@ -9,7 +9,20 @@
     <title>login page</title>
 </head>
 <body>
-    <h1>login page</h1>
+    <div class="form-content">
+        <form>
+            <h1>Login</h1>
+            <!-- <div class="alert"></div> -->
+                <!-- <p>alert is alerst is alert is alert</p> -->           
+            <label for="upload-image" class="upload-image"></label>
+            <input type="file" name="picture" id="upload-image" hidden>
+            <input type="text" placeholder="Username..." name="username">
+            <input type="text" placeholder="password..." name="password">
+            <button type="submit">Sign In</button>
+            <span>I don't have an account <a href="register.html">Register</a></span>
+    
+        </form>
+       </div>
     <script src="./Js/login.js"></script>    
 </body>
 </html>
