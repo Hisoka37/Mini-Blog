@@ -34,7 +34,11 @@ text-align: center;
 color: white;
 border-radius: 110px;
 font-size: 10px;
+display: none;
+}
 
+.form-content form .alert.error {
+    display: block;
 }
 
 .form-content form .upload-image {
